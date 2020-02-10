@@ -1,0 +1,51 @@
+{
+  "title": "天钿Daily API",
+  "author": "bunnyxt",
+  "description": "天钿Daily后端API文档",
+  "language": "zh-hans",
+  "gitbook": "3.2.3",
+  "styles": {
+    "website": "./styles/website.css"
+  },
+  "structure": {
+    "readme": "README.md"
+  },
+  "plugins": [
+    "-sharing",
+    "sharing-plus",
+    "github",
+    "custom-favicon"
+  ],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/bunnyxt"
+    },
+    "sharing": {
+      "douban": false,
+      "facebook": false,
+      "google": false,
+      "hatenaBookmark": false,
+      "instapaper": false,
+      "line": false,
+      "linkedin": false,
+      "messenger": false,
+      "pocket": false,
+      "qq": true,
+      "qzone": false,
+      "stumbleupon": false,
+      "twitter": false,
+      "viber": false,
+      "vk": false,
+      "weibo": true,
+      "whatsapp": false,
+      "all": [
+        "facebook",
+        "twitter",
+        "weibo",
+        "qq",
+        "linkedin"
+      ]
+    },
+    "favicon": "./image/logo.ico"
+  }
+}
