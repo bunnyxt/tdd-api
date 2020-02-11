@@ -34,7 +34,7 @@ staff | Array | staff数组，若无则为null
 
 其中：
 
-`member`对象
+`member`对象，即[member](member.md)对象的一部分
 
 字段名 | 数据类型 | 备注
 - | - | - 
@@ -43,7 +43,7 @@ sex | String | 性别
 face | String | 头像url
 sign | String | 个性签名
 
-`laststat`对象
+`laststat`对象，即[video_record](video_record.md)对象的一部分
 
 字段名 | 数据类型 | 备注
 - | - | - 
@@ -56,7 +56,7 @@ coin | Integer | 硬币
 share | Integer | 分享
 like | Integer | 点赞
 
-`staff`数组中的对象
+`staff`数组中的对象，即[video_staff](video_staff.md)对象
 
 字段名 | 数据类型 | 备注
 - | - | - 
@@ -192,7 +192,8 @@ count | Integer | 否 | 1 | 1 <= x <= 20 | 获取视频个数
 
 随机`count`个视频构成的video对象数组。
 
-注意，并非在所有收录的视频中随机，是在一个单独的经过筛选的所有视频的一个子集中随机抽取。
+> [!NOTE]
+> 并非在所有收录的视频中随机，是在一个单独的经过筛选的所有视频的一个子集中随机抽取。
 
 # 仅aid与标题
 
@@ -254,7 +255,8 @@ aid | Integer | x > 0 | 视频aid
 }
 ```
 
-注意：只有本系统添加的补充与控制字段（打的标签，`singer`啊`original`啊啥的）可以通过此方法修改。从B站api获得的视频本体信息（`videos`啊`pubdate`啊啥的）是无法通过网页系统修改的，只有爬虫系统可以修改。
+> [!NOTE]
+> 只有本系统添加的补充与控制字段（打的标签，`singer`啊`original`啊啥的）可以通过此方法修改。从B站api获得的视频本体信息（`videos`啊`pubdate`啊啥的）是无法通过网页系统修改的，只有爬虫系统可以修改。
 
 ## 权限控制
 
