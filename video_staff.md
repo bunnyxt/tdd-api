@@ -3,7 +3,7 @@
 本系统收录的视频staff
 
 字段名 | 数据类型 | 备注
-- | - | - 
+:- | :- | :- 
 mid | Integer | mid
 name | String | 昵称
 face | String | 头像url

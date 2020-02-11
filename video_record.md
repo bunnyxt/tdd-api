@@ -3,7 +3,7 @@
 本系统爬取的视频记录
 
 字段名 | 数据类型 | 备注
-- | - | - 
+:- | :- | :- 
 id | Long | 主键，通用返回参数
 added | Integer | 添加时间的时间戳，通用返回参数
 aid | Integer | aid
@@ -51,7 +51,7 @@ GET：[https://api.bunnyxt.com/tdd/v2/record](https://api.bunnyxt.com/tdd/v2/rec
 ## 请求参数
 
 参数名 | 数据类型 | 是否必须 | 默认值 | 取值范围 | 备注
-- | - | - | - | - | -
+:- | :- | :- | :- | :- | :-
 aid | Integer | 否 | 0 | x > 0 | 视频aid
 start_ts | Integer | 否 | 无 | x > 0 | 记录添加时间，起始，时间戳
 end_ts | Integer | 否 | 无 | x > 0 | 记录添加时间，结束，时间戳

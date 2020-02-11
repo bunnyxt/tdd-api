@@ -3,7 +3,7 @@
 本系统收录的用户
 
 字段名 | 数据类型 | 备注
-- | - | - 
+:- | :- | :- 
 id | Long | 主键，通用返回参数
 added | Integer | 添加时间的时间戳，通用返回参数
 mid | Integer | mid
@@ -35,7 +35,7 @@ GET：[https://api.bunnyxt.com/tdd/v2/member/{mid}](https://api.bunnyxt.com/tdd/
 ## 请求参数
 
 URL参数 | 数据类型 | 取值范围 | 备注
-- | - | - | -
+:- | :- | :- | :-
 mid | Integer | x > 0 | 用户mid
 
 ## 响应内容
@@ -51,7 +51,7 @@ GET：[https://api.bunnyxt.com/tdd/v2/member](https://api.bunnyxt.com/tdd/v2/mem
 ## 请求参数
 
 参数名 | 数据类型 | 是否必须 | 默认值 | 取值范围 | 备注
-- | - | - | - | - | -
+:- | :- | :- | :- | :- | :-
 sex | String | 否 | 无 | [男, 女, 保密] | 用户性别
 name | String | 否 | 无 | / | 用户昵称（包含该部分）
 pn | Integer | 否 | 1 | x > 0 | page num，通用请求参数

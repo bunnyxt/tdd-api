@@ -3,7 +3,7 @@
 本系统收录的视频
 
 字段名 | 数据类型 | 备注
-- | - | - 
+:- | :- | :- 
 id | Long | 主键，通用返回参数
 added | Integer | 添加时间的时间戳，通用返回参数
 aid | Integer | aid
@@ -37,7 +37,7 @@ staff | Array | staff数组，若无则为null
 `member`对象，即[member](member.md)对象的一部分
 
 字段名 | 数据类型 | 备注
-- | - | - 
+:- | :- | :- 
 name | String | 昵称
 sex | String | 性别
 face | String | 头像url
@@ -46,7 +46,7 @@ sign | String | 个性签名
 `laststat`对象，即[video_record](video_record.md)对象的一部分
 
 字段名 | 数据类型 | 备注
-- | - | - 
+:- | :- | :- 
 added | Integer | 添加时间的时间戳，通用返回参数
 view | Integer | 播放
 danmaku | Integer | 弹幕
@@ -59,7 +59,7 @@ like | Integer | 点赞
 `staff`数组中的对象，即[video_staff](video_staff.md)对象
 
 字段名 | 数据类型 | 备注
-- | - | - 
+:- | :- | :- 
 mid | Integer | mid
 name | String | 昵称
 face | String | 头像url
@@ -141,7 +141,7 @@ GET：[https://api.bunnyxt.com/tdd/v2/video/{aid}](https://api.bunnyxt.com/tdd/v
 ## 请求参数
 
 URL参数 | 数据类型 | 取值范围 | 备注
-- | - | - | -
+:- | :- | :- | :-
 aid | Integer | x > 0 | 视频aid
 
 ## 响应内容
@@ -157,7 +157,7 @@ GET：[https://api.bunnyxt.com/tdd/v2/video](https://api.bunnyxt.com/tdd/v2/vide
 ## 请求参数
 
 参数名 | 数据类型 | 是否必须 | 默认值 | 取值范围 | 备注
-- | - | - | - | - | -
+:- | :- | :- | :- | :- | :-
 vc | Integer | 否 | 0 | 0, 1 | 是否为VC视频，0：否；1：是
 start_ts | Integer | 否 | 无 | x > 0 | 视频投稿时间，起始，时间戳
 end_ts | Integer | 否 | 无 | x > 0 | 视频投稿时间，结束，时间戳
@@ -185,7 +185,7 @@ GET：[https://api.bunnyxt.com/tdd/v2/video/random](https://api.bunnyxt.com/tdd/
 ## 请求参数
 
 参数名 | 数据类型 | 是否必须 | 默认值 | 取值范围 | 备注
-- | - | - | - | - | -
+:- | :- | :- | :- | :- | :-
 count | Integer | 否 | 1 | 1 <= x <= 20 | 获取视频个数
 
 ## 响应内容
@@ -204,7 +204,7 @@ GET：[https://api.bunnyxt.com/tdd/v2/video/aidtitle](https://api.bunnyxt.com/td
 ## 请求参数
 
 参数名 | 数据类型 | 是否必须 | 默认值 | 取值范围 | 备注
-- | - | - | - | - | -
+:- | :- | :- | :- | :- | :-
 aid | Integer | 是 | 无 | x > 1000 | 视频aid的前半部分
 
 ## 响应内容
@@ -243,7 +243,7 @@ PUT：[https://api.bunnyxt.com/tdd/v2/video/{aid}](https://api.bunnyxt.com/tdd/v
 ## 请求参数
 
 URL参数 | 数据类型 | 取值范围 | 备注
-- | - | - | -
+:- | :- | :- | :-
 aid | Integer | x > 0 | 视频aid
 
 请求体为一个video对象，包括需要修改的字段名和字段值。例如，对`aid`为1250752的视频修改`solo`字段为1，修改`singer`字段为"洛天依,"，则请求体包含以下对象：

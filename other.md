@@ -11,7 +11,7 @@ GET：[https://api.bunnyxt.com/tdd/v2/statdaily](https://api.bunnyxt.com/tdd/v2/
 ## 请求参数
 
 参数名 | 数据类型 | 是否必须 | 默认值 | 取值范围 | 备注
-- | - | - | - | - | -
+:- | :- | :- | :- | :- | :-
 start_ts | Integer | 否 | 无 | x > 0 | 起始时间，时间戳
 end_ts | Integer | 否 | 无 | x > 0 | 结束时间，时间戳
 pn | Integer | 否 | 1 | x > 0 | page num，通用请求参数
@@ -67,7 +67,7 @@ GET：[https://api.bunnyxt.com/tdd/v2/updatelog](https://api.bunnyxt.com/tdd/v2/
 ## 请求参数
 
 参数名 | 数据类型 | 是否必须 | 默认值 | 取值范围 | 备注
-- | - | - | - | - | -
+:- | :- | :- | :- | :- | :-
 last_count | Integer | 否 | 5 | x >= 0 | 最近的日志的条数，**0表示获取所有日志**
 
 ## 响应内容
@@ -77,7 +77,7 @@ updatelog为系统更新日志记录，由站长手动维护，只记录较大�
 updatelog对象结构如下：
 
 字段名 | 数据类型 | 备注
-- | - | - 
+:- | :- | :- 
 added | Integer | 添加时间的时间戳，通用返回参数
 type | Integer | 更新类型，1：添加；2：删除；3：修改
 content | String | 日志内容
