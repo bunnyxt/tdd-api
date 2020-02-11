@@ -14,7 +14,11 @@
     "-sharing",
     "sharing-plus",
     "github",
-    "custom-favicon"
+    "custom-favicon",
+    "flexible-alerts",
+    "pageview-count",
+    "auto-scroll-table",
+    "ancre-navigation"
   ],
   "pluginsConfig": {
     "github": {
@@ -46,6 +50,18 @@
         "linkedin"
       ]
     },
-    "favicon": "./image/logo.ico"
+    "favicon": "./image/logo.ico",
+    "flexible-alerts": {
+      "style": "callout",
+      "note": {
+        "label": "注意"
+      },
+      "tip": {
+        "label": "提示"
+      },
+      "warning": {
+        "label": "警告"
+      }
+    }
   }
 }
