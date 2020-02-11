@@ -8,6 +8,8 @@
 
 后端采用RESTful API架构，但由于作者能力有限，存在部分不严格遵循规范之处，还请谅解。
 
+该文档使用GitBook编写，部署在[https://api.bunnyxt.com/tdd/doc/](https://api.bunnyxt.com/tdd/doc/)此处。请访问以上URL以获得最佳阅读体验。
+
 # 使用须知
 
 使用本站API、数据，意味着您知晓并同意以下内容：

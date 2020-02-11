@@ -10,7 +10,7 @@
 
 若请求出错，服务器将返回`4xx`或`5xx`代码。响应体将返回一个包含错误信息的对象。例如，访问`https://api.bunnyxt.com/tdd/v2/undefined`这样一个不存在的API地址，服务器将返回以下信息：
 
-```
+```JSON
 {
   "code": 404,
   "message": "Not Found",
@@ -34,7 +34,7 @@
 
 当一个请求的参数不符合规定时，服务器将返回`40001`错误。例如，访问`https://api.bunnyxt.com/tdd/v2/video?vc=2`，由于`vc`字段只能取0或1，而本次请求的vc字段的值为2，不符合API参数规定，服务器将返回以下信息。
 
-```
+```JSON
 {
   "code": 40001,
   "message": "invalid request parameter",

@@ -67,7 +67,7 @@ title | String | 分工
 
 示例：[https://api.bunnyxt.com/tdd/v2/video/78977256](https://api.bunnyxt.com/tdd/v2/video/78977256)
 
-```
+```JSON
 {
   "id": 225395,
   "added": 1579878149,
@@ -212,7 +212,7 @@ aid | Integer | 是 | 无 | x > 1000 | 视频aid的前半部分
 
 示例：[https://api.bunnyxt.com/tdd/v2/video/aidtitle?aid=45693](https://api.bunnyxt.com/tdd/v2/video/aidtitle?aid=45693)
 
-```
+```JSON
 [
   {
     "aid": 456930,
@@ -247,7 +247,7 @@ aid | Integer | x > 0 | 视频aid
 
 请求体为一个video对象，包括需要修改的字段名和字段值。例如，对`aid`为1250752的视频修改`solo`字段为1，修改`singer`字段为"洛天依,"，则请求体包含以下对象：
 
-```
+```JSON
 {
   "solo": 1,
   "singer": "洛天依,"
