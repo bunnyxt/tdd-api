@@ -27,8 +27,8 @@ statdaily对象结构如下：
 
 字段名 | 数据类型 | 备注
 - | - | - 
-id | Long | 主键，通用返回参数
-added | Integer | 添加时间的时间戳，通用返回参数
+id | Long | 主键，通用返回字段
+added | Integer | 添加时间的时间戳，通用返回字段
 video_count | Long | 系统收录的视频总数
 member_count | Long | 系统收录的用户总数
 video_record_count | Long | 系统收录的视频记录总数
@@ -78,7 +78,7 @@ updatelog对象结构如下：
 
 字段名 | 数据类型 | 备注
 :- | :- | :- 
-added | Integer | 添加时间的时间戳，通用返回参数
+added | Integer | 添加时间的时间戳，通用返回字段
 type | Integer | 更新类型，1：添加；2：删除；3：修改
 content | String | 日志内容
 

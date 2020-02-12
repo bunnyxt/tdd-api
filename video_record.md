@@ -4,8 +4,8 @@
 
 字段名 | 数据类型 | 备注
 :- | :- | :- 
-id | Long | 主键，通用返回参数
-added | Integer | 添加时间的时间戳，通用返回参数
+id | Long | 主键，通用返回字段
+added | Integer | 添加时间的时间戳，通用返回字段
 aid | Integer | aid
 view | Integer | 播放
 danmaku | Integer | 弹幕
