@@ -61,6 +61,8 @@ newval | String | 否 | 无 | / | 字段变更后的值（包含该部分）
 pn | Integer | 否 | 1 | x > 0 | page num，通用请求参数
 ps | Integer | 否 | 20 | 1 < x <= 20 | page size， 通用请求参数
 
+其中`attr`参数应为`video`对象的某一属性，详情请参考[video - 视频](video.md)。
+
 ## 响应内容
 
 根据请求的参数查找到的video_log对象数组。若不存在任何满足条件的对象，则返回空数组。
