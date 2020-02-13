@@ -6,6 +6,7 @@
 - [通用请求参数](common_request_params.md)
 - [通用返回字段](common_response_fields.md)
 - [member - 用户](member.md)
+- [member_log - 用户信息更新记录](member_log.md)
 - [video - 视频](video.md)
 - [video_log - 视频信息更新记录](video_log.md)
 - [video_record - 视频记录](video_record.md)
