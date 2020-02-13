@@ -7,6 +7,7 @@
 - [通用返回字段](common_response_fields.md)
 - [member - 用户](member.md)
 - [video - 视频](video.md)
+- [video_log - 视频信息更新记录](video_log.md)
 - [video_record - 视频记录](video_record.md)
 - [video_staff - 视频staff](video_staff.md)
 - [other - 其他](other.md)
