@@ -148,6 +148,27 @@ aid | Integer | x > 0 | 视频aid
 
 根据给定的aid查找到的一个video对象。若不存在该aid的对象，则返回空。
 
+# 根据mid获取
+
+# URL
+
+GET：[https://api.bunnyxt.com/tdd/v2/member/{mid}/video](https://api.bunnyxt.com/tdd/v2/member/{mid}/video)
+
+## 请求参数
+
+参数名 | 数据类型 | 是否必须 | 默认值 | 取值范围 | 备注
+:- | :- | :- | :- | :- | :-
+order_by | String | 否 | pubdate | [pubdate, view, danmaku, reply, favorite, coin, share, like] | 排序依据
+desc | Integer | 否 | 1 | 0, 1 | 排序，0：从小到大；1：从大到小
+pn | Integer | 否 | 1 | x > 0 | page num，通用请求参数
+ps | Integer | 否 | 20 | 1 < x <= 20 | page size， 通用请求参数
+
+## 响应内容
+
+根据mid参数，查找该用户参与创作的（包括本人投稿和与别人一起的联合投稿）视频的video对象数组。若不存在任何满足条件的对象，则返回空数组。
+
+响应头部包含`x-total-count`字段。
+
 # 根据条件查询
 
 ## URL
