@@ -63,6 +63,9 @@ ps | Integer | 否 | 20 | 1 < x <= 20 | page size， 通用请求参数
 
 其中`attr`参数应为`video`对象的某一属性，详情请参考[video - 视频](video.md)。
 
+> [!Note]
+> 视频更新之时也会对staff列表的信息进行更新，`attr`为`staff`（staff增/删）或`staff.title`（staff分工更改）。
+
 ## 响应内容
 
 根据请求的参数查找到的video_log对象数组。若不存在任何满足条件的对象，则返回空数组。
