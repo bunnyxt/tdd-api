@@ -150,7 +150,7 @@ aid | Integer | x > 0 | 视频aid
 
 # 根据mid获取
 
-# URL
+## URL
 
 GET：[https://api.bunnyxt.com/tdd/v2/member/{mid}/video](https://api.bunnyxt.com/tdd/v2/member/{mid}/video)
 
@@ -214,7 +214,7 @@ count | Integer | 否 | 1 | 1 <= x <= 20 | 获取视频个数
 随机`count`个视频构成的video对象数组。
 
 > [!NOTE]
-> 并非在所有收录的视频中随机，是在一个单独的经过筛选的所有视频的一个子集中随机抽取。
+> 并非在所有收录的视频中随机，是在一个单独的经过筛选的所有视频的一个子集中随机抽取。该子集收录标准为：视频状态正常，是已经标记的VC视频(`isvc`为1或2)，播放量>=10000。
 
 # 仅aid与标题
 
