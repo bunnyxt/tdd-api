@@ -40,7 +40,17 @@ like | Integer | 点赞
 
 GET：[https://api.bunnyxt.com/tdd/v2/video/{aid}/record](https://api.bunnyxt.com/tdd/v2/video/{aid}/record)
 
-`video/{aid}/record`等价于`record?aid={aid}`，其他请求参数与响应内容等行为也完全相同，请参考[根据条件查询](#根据条件查询)。
+## 请求参数
+
+参数名 | 数据类型 | 是否必须 | 默认值 | 取值范围 | 备注
+:- | :- | :- | :- | :- | :-
+last_count | Integer | 否 | 0 | 0 <= x <= 5000 | 请求返回最后添加的x条记录，通用请求参数
+
+> [!NOTE]
+>
+> 考虑到业务需求与响应性能，当且仅当设置了请求的`aid`时，`last_count`参数才有效。为了确保以上规则，`last_count`参数仅在`video/{aid}/record`接口下生效，`record?aid={aid}&last_count=x`是无效的。
+
+`video/{aid}/record`等价于`record?aid={aid}`，除了`last_count`外，其他请求参数与响应内容等行为也完全相同，请参考[根据条件查询](#根据条件查询)。
 
 # 根据条件查询
 
