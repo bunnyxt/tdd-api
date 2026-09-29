@@ -62,14 +62,14 @@ GET：[https://api.bunnyxt.com/tdd/v2/record](https://api.bunnyxt.com/tdd/v2/rec
 
 参数名 | 数据类型 | 是否必须 | 默认值 | 取值范围 | 备注
 :- | :- | :- | :- | :- | :-
-aid | Integer | 否 | 0 | x > 0 | 视频aid
+aid | Integer | 是 | 无 | x > 0 | 视频aid
 start_ts | Integer | 否 | 无 | x > 0 | 记录添加时间，起始，时间戳
 end_ts | Integer | 否 | 无 | x > 0 | 记录添加时间，结束，时间戳
 pn | Integer | 否 | 1 | x > 0 | page num，通用请求参数
 ps | Integer | 否 | 25000 | 1 < x <= 25000 | page size， 通用请求参数
 
-> [!TIP]
-> 天钿Daily所有视频会在每天北京时间凌晨4点更新一次所有视频的记录，持续时长半小时左右。如欲获得某日所有视频的记录，设置`start_ts`为当日04:00，`end_ts`为当日04:30即可。
+> [!NOTE]
+> `aid`为必填参数。缺少`aid`或`aid`不大于0时，接口返回400（`code` 40001），不支持不带`aid`按时间范围批量获取所有视频的记录。
 
 ## 响应内容
 

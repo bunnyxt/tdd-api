@@ -52,7 +52,7 @@ GET：[https://api.bunnyxt.com/tdd/v2/video/log](https://api.bunnyxt.com/tdd/v2/
 
 参数名 | 数据类型 | 是否必须 | 默认值 | 取值范围 | 备注
 :- | :- | :- | :- | :- | :-
-aid | Integer | 否 | 0 | x > 0 | 视频aid
+aid | Integer | 是 | 无 | x > 0 | 视频aid
 start_ts | Integer | 否 | 无 | x > 0 | 记录添加时间，起始，时间戳
 end_ts | Integer | 否 | 无 | x > 0 | 记录添加时间，结束，时间戳
 attr | String | 否 | 无 | / | 发生变动的字段
@@ -60,6 +60,9 @@ oldval | String | 否 | 无 | / | 字段变更前的值（包含该部分）
 newval | String | 否 | 无 | / | 字段变更后的值（包含该部分）
 pn | Integer | 否 | 1 | x > 0 | page num，通用请求参数
 ps | Integer | 否 | 20 | 1 < x <= 20 | page size， 通用请求参数
+
+> [!NOTE]
+> `aid`为必填参数。缺少`aid`或`aid`不大于0时，接口返回400（`code` 40001），不支持不带`aid`按时间范围批量获取所有视频的更新日志。
 
 其中`attr`参数应为`video`对象的某一属性，详情请参考[video - 视频](video.md)。
 

@@ -44,7 +44,7 @@ GET：[https://api.bunnyxt.com/tdd/v2/member/log](https://api.bunnyxt.com/tdd/v2
 
 参数名 | 数据类型 | 是否必须 | 默认值 | 取值范围 | 备注
 :- | :- | :- | :- | :- | :-
-mid | Integer | 否 | 0 | x > 0 | 用户mid
+mid | Integer | 是 | 无 | x > 0 | 用户mid
 start_ts | Integer | 否 | 无 | x > 0 | 记录添加时间，起始，时间戳
 end_ts | Integer | 否 | 无 | x > 0 | 记录添加时间，结束，时间戳
 attr | String | 否 | 无 | / | 发生变动的字段
@@ -52,6 +52,9 @@ oldval | String | 否 | 无 | / | 字段变更前的值（包含该部分）
 newval | String | 否 | 无 | / | 字段变更后的值（包含该部分）
 pn | Integer | 否 | 1 | x > 0 | page num，通用请求参数
 ps | Integer | 否 | 20 | 1 < x <= 20 | page size， 通用请求参数
+
+> [!NOTE]
+> `mid`为必填参数。缺少`mid`或`mid`不大于0时，接口返回400（`code` 40001），不支持不带`mid`按时间范围批量获取所有用户的更新日志。
 
 其中`attr`参数应为`member`对象的某一属性，详情请参考[member - 用户](member.md)。
 
