@@ -64,14 +64,14 @@ GET：[https://api.bunnyxt.com/tdd/v2/totalstat](https://api.bunnyxt.com/tdd/v2/
 
 参数名 | 数据类型 | 是否必须 | 默认值 | 取值范围 | 备注
 :- | :- | :- | :- | :- | :-
-mid | Integer | 否 | 0 | x > 0 | UP主mid
+mid | Integer | 是 | 无 | x > 0 | UP主mid
 start_ts | Integer | 否 | 无 | x > 0 | 记录添加时间，起始，时间戳
 end_ts | Integer | 否 | 无 | x > 0 | 记录添加时间，结束，时间戳
 pn | Integer | 否 | 1 | x > 0 | page num，通用请求参数
 ps | Integer | 否 | 25000 | 1 < x <= 25000 | page size， 通用请求参数
 
-> [!TIP]
-> 天钿Daily所有P主会在每天北京时间凌晨4点半左右，所有视频记录爬取完之后，更新一次用户视频数据总计记录，持续时长最多半小时。如欲获得某日所有用户视频数据总计记录，设置`start_ts`为当日04:30，`end_ts`为当日05:00即可。
+> [!NOTE]
+> `mid`为必填参数。缺少`mid`或`mid`不大于0时，接口返回400（`code` 40001），不支持不带`mid`按时间范围批量获取所有用户视频数据总计记录。
 
 ## 响应内容
 
